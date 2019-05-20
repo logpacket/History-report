@@ -1,6 +1,6 @@
 <style>
 	:root {
-		--main: #607D8B;
+		--main: #2196F3;
 	}
 	.v-dialog {
 		overflow-y: unset;
@@ -9,8 +9,8 @@
 
 <template>
 	<div id="app">
-		<v-toolbar dark color="blue-grey" style="background-color: purple">
-			<v-toolbar-title style="color: #fff">우리나라 통신기술 발전사</v-toolbar-title>
+		<v-toolbar dark color="blue-grey" style="background-color: var(--main)!important">
+			<v-toolbar-title style="color: #fff; font-weight: bold;">우리나라 통신기술 발전사</v-toolbar-title>
 				<v-spacer></v-spacer>
 				<v-toolbar-items class="hidden-sm-and-down">
 					<v-btn href="#" flat style="font-size: 1.2rem" >고대</v-btn>
@@ -20,7 +20,7 @@
 				</v-toolbar-items>
 		</v-toolbar>
 
-		<v-container align-center>
+		<v-container align-center style="max-width: 1200px;">
 			<v-timeline>
 				<v-timeline-item v-for="(year, i) in years" :key="i" :color="year.color" small>
 					<template v-slot:opposite>
@@ -67,7 +67,7 @@ export default {
 		{
 			color: "orange",
 			title: "전서구",
-			year: "BC 3000",
+			year: "BC 2000",
 			text: "통신용으로 훈련된 비둘기 발목에 통신문을 매달아 귀소본능을 이용한 통신방법",
 			img: "https://w.namu.la/s/54ef7a9498a47d4b81503c813e18abcd6a90bd7f3c0f44322ad1850eb83feb9ca7845c0003f4d6e3b40b634d346d0b24b1a4a07be9b5fd054a561ae83b32465dcebc8cd3ec673dd0c234f899acffea289c5160d55854bbc7d643fc36f31d35aa",
 			detail: "전서구란 통신용으로 훈련된 비둘기를 의미하여 비둘기 발목에 긴급 통신문을 매달아 귀소본능을 이용한 통신방법입니다. 비둘기의 귀소본능을 이용한 원리는 비둘기의 부리와 머리 사이에 자성(磁性) 성분의 특수 세포가 있다고 합니다. 나침반과 같은 이 세포로 지구의 자장을 읽어 목적지를 찾아갈 수 있는 원리입니다. 1차 세계대전 과 2차세계대전, 6.25전쟁에서도 미국 통신부대가 전서구를 이용한 기록이 있을정도로 신뢰성이 입증되어있습니다.",
@@ -85,7 +85,7 @@ export default {
 		{
 			color: "cyan",
 			title: "머리연",
-			year: "647",
+			year: "1392",
 			text: "대형 연을 이용하여 원기러 아군과 통신하는 정보 교환 방법",
 			img: "https://t1.daumcdn.net/cfile/tistory/1777684B4F7AA4A90E",
 			detail: "주로 해상에서 대형 연을 이용하여 원기러 아군과 통신하고 전략적 신호 로서 사용했습니다. 봉화를 설치하기 어려운 해상환경에서 정보를 전달하기 위해 사용하기 시작했으며, 400여년전인 임진왜란때 충무공 이순신장군께서 왜적을 물리치는데 통신 및 암호 수단으로 머리연을 사용하여 군용 신호로써 사용했습니다.",
@@ -106,7 +106,7 @@ export default {
 		{
 			color: "green",
 			title: "우편",
-			year: "1840",
+			year: "1884",
 			text: "서신(書信) 및 일정한 물건을 일정한 조직에 의해 전 세계에 규칙적으로 송달하는 업무",
 			img: "http://ojsfile.ohmynews.com/down/images/1/dncmcons_224321_1[308180].jpg",
 			detail: "1884년 홍영식에 의해서 한성의 우정총국과 인천 우정분국 간의 우편업무를 개시하면서 시작했습니다. 개시된 신식 우편제도는 같은 해 12월 4일에 일어난 갑신정변이 실패함에 따라 20여일 만인 1884년 12월 6일에 폐지되었습니다. 그 후 10년이라는 긴 공백 기간을 거쳐 1895년에 우편업무는 다시 시작되었고, 1898년 전국에 임시 우체국을 설치하는 등 착실한 발전을 해나갔습니다. 하지만 곧 일본의 침략으로 한일합방에 앞선 1905년에 통신권을 박탈당했지만 1945년 8월 15일 광복과 함께 미군정을 거쳐 1948년 8월 15일 비로소 대한민국 체신부가 탄생하게 되었습니다.",
@@ -115,7 +115,7 @@ export default {
 		{
 			color: "green",
 			title: "전신 & 전화기",
-			year: "1849",
+			year: "1894",
 			text: "문자나 숫자를 전기 신호로 바꾸어 전파나 전류로 보내는 통신",
 			img: "https://t1.daumcdn.net/cfile/tistory/2244F83F58CF9F2C18",
 			detail: "9세기 말 조선은 유교적 전통사회로부터 벗어나 새로운 근대사회로 거듭나기 위한 활발한 움직임이 있었는데요 민족의 근대화를 위한 대표적인 노력 중 하나가 바로 전기통신의 도입이었습니다. 과거 전기통신이란 크게 전신국과 전화국으로 나뉘는데요? 전신국은 전보를 접수하여 전송하기 위해 설치된 관서로 1885년 9월 28일에 한성전보총국과 인천 분국이 개국되고 평양과 의주 분국이 개국되는 증 우리나라 최초의 전신국이 설립되었습니다. 서울과 의주를 잇는 서로 전신선,서울과 부산 간의 남로 전신선, 서울과 원산의 북로 전신선이 개통되어 전국 주요 도시가 빠르게 연결되었습니다. 이로써 전신 시설은 주요 통신수단으로 정착되어 이 때를 기점으로 한국의 정보통신 속도가 크게 개선되었습니다.",
