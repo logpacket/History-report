@@ -10,8 +10,8 @@
 			<v-toolbar-title>우리나라 통신기술 발전사</v-toolbar-title>
 				<v-spacer></v-spacer>
 				<v-toolbar-items class="hidden-sm-and-down">
-					<v-btn href="#" flat>고대</v-btn>
-					<v-btn href="#" flat>중세</v-btn>
+					<v-btn href="#" flat>고대, 중세</v-btn>
+					<v-btn href="#" flat>근대</v-btn>
 					<v-btn href="#" flat>현대</v-btn>
 				</v-toolbar-items>
 		</v-toolbar>
@@ -29,7 +29,7 @@
 
 							<div>
 								<span v-text="year.text"></span>
-								<v-dialog width="500px">
+								<v-dialog max-width="700px">
 									<template v-slot:activator="{ on }">
 										<v-btn color="green" dark v-on="on">상세내용</v-btn>
 									</template>
@@ -56,31 +56,59 @@
 
 <script>
 export default {
-  name: "app",
-  data: () => ({
-    years: [
-      {
-        color: "cyan",
-        year: 1960,
-        text:
-          "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
-        src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-      },
-      {
-        color: "green",
-        year: 1970,
-        text:
-          "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
-        src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-      },
-      {
-        color: "pink",
-        year: 1980,
-        text:
-          "Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
-        src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-      }
-    ]
-  })
+	name: "app",
+	data: () => ({
+		years: [
+			{
+				color: "cyan",
+				year: "BC 2000",
+				text:
+				"Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
+				src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+			},
+			{
+				color: "green",
+				year: 1970,
+				text:
+				"Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
+				src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+			},
+			{
+				color: "pink",
+				year: 1980,
+				text:
+				"Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
+				src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+			},
+			{
+				color: "pink",
+				year: 1980,
+				text:
+				"Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
+				src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+			},
+			{
+				color: "pink",
+				year: 1980,
+				text:
+				"Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
+				src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+			},
+			{
+				color: "pink",
+				year: 1980,
+				text:
+				"Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
+				src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+			},
+			{
+				color: "pink",
+				year: 1980,
+				text:
+				"Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae. ",
+				src: "https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+			}
+		]
+	})
 };
 </script>
